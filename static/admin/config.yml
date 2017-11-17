@@ -32,7 +32,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "product" 
     label: "Products"
-    folder: "site/content/product"
+    folder: "src/pages/product"
     create: true 
     searchFields: ["sku","title","intro","description"]
     fields: 
@@ -47,7 +47,7 @@ collections:
         - {label: "Description", name: "description", widget: "markdown", required: false}     
   - name: "faq" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Faq" # Used in the UI, ie.: "New Post"
-    folder: "site/content/faq"
+    folder: "src/pages/faq"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Question", name: "title", widget: "text"}
