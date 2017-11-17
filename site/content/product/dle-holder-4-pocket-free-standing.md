@@ -9,6 +9,8 @@ intro: |-
   Converts to A4, 1 pocket.
 
   Removable divider.
+img:
+  - image: /files/70_1_med.jpg
 price:
   - max_quantity: '1'
     min_quantity: '1'
