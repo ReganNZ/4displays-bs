@@ -30,3 +30,25 @@ collections:
       - {label: "Path", name: "path", widget: "hidden", default: "/about"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "product" 
+    label: "Products"
+    folder: "site/content/product"
+    create: true 
+    searchFields: ["sku","title","intro","description"]
+    fields: 
+        - {label: "Sku", name: "sku", widget: "string"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: Type, name: type, widget: hidden, default: product}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
+        - {label: "Intro", name: "intro", widget: "text", required: true}
+        - {label: "Images", name: "img", widget: "list", required: false, fields: [{label: Image, name: image, widget: image}]}
+        - {label: "Prices", name: "price", widget: "list", fields: [{label: price, name: price, widget: number }, {label: Min Quantity, name: min_quantity, widget: number} , {label: Max Quantity, name: max_quantity, widget: number}]}
+        - {label: "Weight", name: "weight", widget: "hidden", default: "1"}
+        - {label: "Description", name: "description", widget: "markdown", required: false}     
+  - name: "faq" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Faq" # Used in the UI, ie.: "New Post"
+    folder: "site/content/faq"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Question", name: "title", widget: "text"}
+      - {label: "Answer", name: "body", widget: "markdown"}
