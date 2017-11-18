@@ -1,4 +1,5 @@
 ---
+path: '/dle-holder-4-pocket-free-standing'
 sku: '39122'
 title: 'DLE Holder, 4 pocket, Free Standing'
 type: product
